@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+/*
+.fira-sans-thin {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 100 al 900 
+    font-style: normal/italic;
+}
+.truculenta-<uniquifier> {
+    font-family: "Truculenta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100 al 900;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+*/
+:root {
+    --color-background: #264653;
+    --color-light: #E9C46A;
+    --color-dark: #F4A261;
+    --color-shadow: #2A9D8F;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5vw;
+}
+body {
+    background-color: var(--color-background);
+}
+.container {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    margin: 15vh auto;
+}
+h1 {
+    text-align: center;
+    color: var(--color-light);
+    font-family: "Truculenta", sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+}
+#text-input {
+    margin: 5vh auto;
+    width: 75%;
+    padding: 1%;
+    background-color: var(--color-light);
+    color: var(--color-background);
+    font-family: "Fira Sans", sans-serif;
+}
+#text-input:focus {
+    outline: none;
+    box-shadow: 0 0 5px 5px var(--color-shadow);
+}
+#text-input::placeholder {
+    color: var(--color-background);
+    font-family: "Fira Sans", sans-serif;
+}
+#check-btn {
+    width: 25%;
+    margin: 1vh auto;
+    padding: 1%;
+    background-color: var(--color-dark);
+    color: var(--color-background);
+    border: var(--color-dark);
+    border-radius: 5px;
+    font-family: "Truculenta", sans-serif;
+    font-size: 1.5rem;
+}
+#check-btn:hover {
+    box-shadow: 0 0 4px 4px var(--color-shadow);
+    transform: translateY(1px);
+}
+#result {
+    width: 75%;
+    height: 10vh;
+    border-radius: 15px;
+    margin: 5vh auto;
+    padding: 1%;
+    background-color: var(--color-light);
+}
+.hidde {
+    display: none;
+}
+#result p {
+    text-align: center;
+    color: var(--color-background);
+    font-family: "Fira Sans", sans-serif;
+}
+
+@media only screen and (max-width: 1000px) {
+    *{
+        font-size: 2.5vw;
+    }
+    .container {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    *{
+        font-size: 3.5vw;
+    }
+    .container {
+        margin: 20vh auto;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    *{
+        font-size: 4.5vw;
+    }
+}
